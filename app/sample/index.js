@@ -11,7 +11,7 @@ app.set("view engine", "ejs");
 
 // 直下のリクエストに対する記述
 app.get('/', function(req, res) {
-  mongoose.connect('mongodb://node2_db/mongo?authSource=mongo', {
+  mongoose.connect('mongodb://express_db/mongo?authSource=mongo', {
     user: 'user1',
     pass: 'user1',
     useNewUrlParser: true,
